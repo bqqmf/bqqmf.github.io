@@ -143,6 +143,11 @@ export default function App() {
         </section>
         <section className="intro-section">
           <div className="image-container">
+            <img src="images/committee.png" alt="Exhibition Poster" />
+          </div>
+        </section>
+        <section className="intro-section">
+          <div className="image-container">
             <img src="images/SmartDesignA3.png" alt="Exhibition Poster" />
           </div>
         </section>
