@@ -69,153 +69,67 @@ header p {
 
 }
 
-
 .title {
   position: absolute;
   text-align: center;
   left: 50%;
   transform: translateX(-50%);
-
-  /* flex: 1; */
   margin: 0;
-}
-
-.subjects button {
-  width: 170px;
-  display: block;
-  margin-bottom: 5px;
-  /* 버튼 간 간격 */
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  background: #fff;
-  padding: 4px 10px;
-  cursor: pointer;
 }
 
 .intro {
   border: 5px solid;
   border-color: green;
-  margin: 88px 63px 80px 63px;
+  margin: 52px 40px 53px 40px;
 }
 
-
-.schedule {
+.subjects {
+  display: flex;
+  /* display: inline-block; */
+  gap: 31px;
+  width: fit-content;             
+  /* margin: 0 auto;          */
+  margin-left: auto;         
+  margin-top: 0.8rem;         
+  justify-content: center; /* 버튼들을 가운데로 배치 */
   border: 5px solid;
+  border-color: orchid;
+}
+
+.subjects button {
+  width: 170px;
+  /* width: 13rem; */
+  height: 35px;
+  /* 버튼 간 간격 */
+  border: 1px solid #6a6a6a;
+  border-radius: 20px;
+  background: #fff;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.schedule-image {
   border-color: blue;
   margin: 50px 145px 50px 72px;
 }
 
 
-.schedule-container {
-  border: 5px solid;
-  border-color: blueviolet;
-  margin: 55px 0px 0px 40px;
-}
-
-
-.schedule-row {
-  display: flex;
-  /* ✨ 이 부분이 핵심입니다. Flexbox를 사용합니다. */
-  justify-content: space-between;
-  align-items: center;
-  /* 세로 중앙 정렬 */
-  padding: 8px 0;
-  /* 위아래 약간의 여백 */
-}
-
-/* 행(Row) 사이의 간격 */
-.padding-top-40 {
-  margin-top: 40px;
-  /* 이제 margin-top이 잘 동작합니다. */
-}
-
-/* 각 열(Column)의 너비 설정 (선택사항) */
-.schedule-row .col-1 {
-  width: 350px;
-}
-
-.schedule-row .col-2 {
-  width: 450px;
-}
-
-.schedule-row .col-3 {
-  text-align: right;
-  flex-grow: 1;
-}
-
-.address {
-  border: 5px solid;
-  border-color: purple;
-  margin-top: 88px;
-}
-
-a {
+.insta-link {
   text-decoration: none;
-}
-
-.member-container {
-  width: 100%;
-  max-width: 1045px;
-  /* 이전 예시와 너비를 맞춥니다. */
-  margin-top: 50px;
-}
-
-.committee {
-  border: 5px solid;
-  border-color: brown;
-  margin-top: 50px;
-}
-
-/* 멤버 리스트의 각 행(Row) */
-.member-row {
-  display: flex;
-  /* ✨ 각 행을 Flexbox 컨테이너로 만듭니다. */
-  align-items: flex-start;
-  /* 아이템들을 위쪽 기준으로 정렬합니다. */
-  margin-bottom: 82px;
-  /* 행 사이의 간격 */
-}
-
-/* 직책과 이름 그룹 (예: '위원장'과 '박진선' 그룹) */
-.member-group {
-  display: flex;
-  /* ✨ 그룹 내부도 Flexbox로 만듭니다. */
-  flex: 1;
-  /* 행 안에서 가능한 공간을 균등하게 차지합니다. */
-}
-
-/* 직책(title) 스타일 */
-.member-group .title {
-  width: 120px;
-  /* 직책명의 너비를 고정합니다. */
-  font-weight: 500;
+  position: relative;  /* 부모를 기준으로 절대 위치 */
+  left: 78.8%;           /* 화면 왼쪽에서 80% 위치 */
   font-size: 32px;
-  /* Semi-bold */
+  color: #3657FF;
 }
 
-/* 이름(names) 목록 스타일 */
-.member-group .names p {
-  margin: 0 0 5px 0;
-  font-weight: 500;
-  font-size: 32px;
-  /* 이름 사이의 간격을 조절합니다. */
-}
 
-@media screen and (max-width: 768px) {
-  body {
-    /* 너비는 항상 100%를 채우자*/
-    width: 100%;
-    /* 가운데 정렬*/
-    margin: 0 auto;
-  }
-
-}
-
-.intro-section {
+.image-section {
   width: 100%;
   max-width: 1440px;
   /* 전체 레이아웃 최대 너비 */
   margin: 0 auto;
+  margin-top: 3rem;
   /* 가운데 정렬 */
   border: 5px solid;
   border-color: skyblue;
