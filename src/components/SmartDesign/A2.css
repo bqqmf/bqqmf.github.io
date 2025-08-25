@@ -1,0 +1,147 @@
+.main {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    max-width: 1440px;
+    border: 5px solid;
+    border-color: gray;
+    margin: 0 auto;
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subject-name {
+    font-size: 40px;
+    margin: 49px 0 64px 63px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.class-name {
+    font-size: 36px;
+}
+
+.group-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid;
+    border-color: sandybrown;
+    margin-left: 72px;
+    margin-right: 122px;
+    margin-bottom: 58px;
+}
+
+.group-member {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    border: 5px solid;
+    border-color: rebeccapurple;
+    width: fit-content;
+}
+
+.group-member p {
+    font-size: 30px;
+    margin: 0;
+
+}
+
+.logo-overlay {
+    position: absolute;
+    /* 부모(.image-container)를 기준으로 위치 설정 */
+    bottom: 70%;
+    /* %를 사용해 반응형 위치 조절 */
+    right: -3%;
+    /* 버튼 사이 간격 */
+}
+
+.logo-image-A3 {
+    width: 507px;
+    height: 195px;
+
+}
+.product-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 5px solid;
+    border-color: brown;
+}
+
+/* .product-sub-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    border: 5px solid;
+    border-color: olive;
+} */
+
+.products {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    /* display: inline-block; */
+    gap: 10px;
+    /* 버튼들을 가운데로 배치 */
+    border: 5px solid;
+    border-color: red;
+}
+
+.products button {
+    width: 170px;
+    height: 35px;
+    border: none;
+    background: none;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.products button.active {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 5px 0;
+    /* color: #007acc; */
+}
+
+.products button:hover {
+    transform: translateY(-2px);
+    /* 살짝 떠오르는 효과 */
+    transition: all 0.2s ease-in-out;
+}
+
+.product-image-section {
+    width: 100%;
+    max-width: 1440px;
+    /* 전체 레이아웃 최대 너비 */
+    margin: 0 auto;
+    margin-top: 100px;
+    /* 가운데 정렬 */
+    border: 5px solid;
+    border-color: skyblue;
+}
+
+.product-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* 가로 중앙 정렬 */
+}
+
+.product-image-container img {
+    width: 100%;
+    /* 부모 컨테이너 너비에 맞춤 */
+    max-width: 100%;
+    /* 이미지 최대 크기 */
+    height: auto;
+    /* 원본 비율 유지 */
+    display: block;
+    /* 아래 여백 제거 */
+}
