@@ -1,0 +1,77 @@
+.main {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    max-width: 1440px;
+    border: 5px solid;
+    border-color: gray;
+    margin: 0 auto;
+    /* 가운데 정렬 */
+}
+
+.home-image {
+    width: 50px;
+    height: 50px;
+    margin: 46px auto auto 45px;
+    cursor: pointer;
+    /* border: 5px solid;
+    border-color: green; */
+}
+.class-image-container {
+    position: relative;
+    /* 자식 요소 위치의 기준점 */
+    width: 100%;
+    /* 너비를 유동적으로 설정 */
+    max-width: 1247px;
+    /* 최대 너비는 700px로 제한 */
+    margin: 64px auto 66px auto;
+    /* 페이지 중앙에 배치 */
+    /* border: 5px solid;
+    border-color: red; */
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    /* 이미지 비율 유지 */
+    display: block;
+    /* 이미지 아래 불필요한 여백 제거 */
+    border-radius: 20px;
+    /* 이미지 모서리를 둥글게 */
+}
+
+.button-overlay {
+    position: absolute;
+    /* 부모(.image-container)를 기준으로 위치 설정 */
+    bottom: 0%;
+    /* %를 사용해 반응형 위치 조절 */
+    right: 1%;
+    display: flex;
+    gap: 24px;
+    /* 버튼 사이 간격 */
+}
+
+.action-image {
+    width: 378px;
+    height: 102px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.action-image:hover {
+    transform: translateY(-2px) scale(1.05);
+}
+
+.intro-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1369px;
+    margin: auto auto 146px auto;
+}
+.intro-image {
+    /* 자식 요소 위치의 기준점 */
+    width: 100%;
+    /* 너비를 유동적으로 설정 */
+    /* 최대 너비는 700px로 제한 */
+    /* 페이지 중앙에 배치 */
+    /* border: 5px solid;
+    border-color: blue; */
+}
