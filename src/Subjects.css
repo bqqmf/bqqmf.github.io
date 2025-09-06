@@ -1,32 +1,27 @@
-.subjects {
+.subject-buttons {
   display: flex;
   /* display: inline-block; */
-  gap: 31px;
-  width: fit-content;
-  /* margin: 0 auto;          */
-  margin-left: auto;
-  margin-top: 0.8rem;
+  gap: 194px;
+  margin-top: 102px;
+  margin-bottom: 104px;
   justify-content: center;
-  /* 버튼들을 가운데로 배치 */
-  border: 5px solid;
-  border-color: orchid;
 }
 
-.subjects button {
-  width: 170px;
-  /* width: 13rem; */
-  height: 35px;
-  /* 버튼 간 간격 */
-  border: 1px solid #6a6a6a;
-  border-radius: 20px;
-  background: #fff;
-  padding: 4px 10px;
+.subject-btn {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  font-size: 24px;
+  border: none;
   cursor: pointer;
-  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
 }
 
-.subjects button:hover {
+.subject-btn:hover {
   transform: translateY(-2px);
-  /* 살짝 떠오르는 효과 */
-  transition: all 0.2s ease-in-out;
+  background-color: #f5f5f5;
 }

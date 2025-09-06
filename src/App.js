@@ -1,5 +1,6 @@
 import React from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
+import Main from "./Main";
 import Home from "./Home";
 import SmartDesign from "./components/SmartDesign/SmartDesign";
 import SmartDesignA1 from "./components/SmartDesign/A1";
@@ -16,7 +17,8 @@ export default function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/" element={<Main />}></Route>
+        <Route path="/home" element={<Home />}></Route>
 
         <Route path="/smart-design" element={<SmartDesign />}></Route>
         <Route path="/smart-design/A1" element={<SmartDesignA1 />}></Route>

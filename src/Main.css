@@ -1,0 +1,44 @@
+
+/* 필요한 다른 굵기도 같은 방식으로 추가할 수 있습니다. */
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  margin: 0;
+  background: #fafafa;
+  color: #222;
+}
+
+.main {
+  position: relative;
+  width: 1440px;
+  height: 972px
+}
+
+.main img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.enter-btn {
+  width: 162px;
+  height: 46px;
+  background-color: #0037FF; /* 버튼 배경색 */
+  color: #F1F1F1;           /* 텍스트 색상 */
+  border: none;             /* 테두리 제거 */
+  border-radius: 68px;      /* 둥근 모서리 */
+  font-size: 30px;          /* 텍스트 크기 */
+  cursor: pointer;          /* 마우스 올리면 손가락 모양 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+
+  position: absolute;
+  bottom: 354px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.enter-btn:hover {
+  background-color: #002ECC; /* 호버 시 약간 어두운 파란색 */
+}

@@ -11,9 +11,11 @@ body {
 }
 
 .container {
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   background: white;
+  overflow-x: hidden;
 }
 
 .bold {
@@ -39,7 +41,6 @@ body {
 
 main {
   max-width: 1440px;
-  padding: 2rem 1rem;
   background: white;
 }
 
