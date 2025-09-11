@@ -1,48 +1,43 @@
 import React from "react";
 import { useNavigate, Link } from "react-router-dom";
 import "./SmartDesign.css"; // CSS 분리 가능
+import ProductCard from "../ProductCard";
 
 export default function SmartDesign() {
   const navigate = useNavigate();
+  const data = [
+    {
+      image: "images/SmartDesign/product-card_1.jpg",
+      title: "제품명1",
+      names: ["이름1", "이름2", "이름3", "이름4"],
+    },
+    {
+      image: "images/SmartDesign/product-card_2.jpg",
+      title: "제품명2",
+      names: ["이름1", "이름2", "이름3", "이름4"],
+    },
+    {
+      image: "images/SmartDesign/product-card_3.png",
+      title: "Ziggleit",
+      names: ["최새롬", "이혜진", "소민지", "황지해"],
+    },
+    {
+      image: "images/SmartDesign/product-card_4.jpg",
+      title: "제품명4",
+      names: ["이름1", "이름2", "이름3", "이름4"],
+    },
+
+  ];
 
   return (
     <div className="main">
-      <Link to="/">
-        <img src="../images/SmartDesign/home.png" alt="Home Button"
-          // style={{ width: "50px", height: "50px", cursor: "pointer" }} />
-          className="home-image" />
-      </Link>
-
-      <div className="class-image-container">
-        <img
-          src="../images/SmartDesign/logo.png"
-          alt="Smart Design 배경 이미지"
-          className="background-image"
-        />
-        <div className="button-overlay">
-          <Link to="/smart-design/A1">
-            <img
-              src="../images/SmartDesign/Aclass.png"
-              alt="A Class 버튼"
-              className="action-image"
-            />
-          </Link>
-          <Link to="/smart-design/B1">
-            <img
-              src="../images/SmartDesign/Bclass.png"
-              alt="B Class 버튼"
-              className="action-image"
-            />
-          </Link>
+        <img className="intro-img" src="images/SmartDesign/intro.png" style={{ width: "832px", height: "auto" }} />
+        <div className="products-grid">
+          {data.map((item, idx) => (
+            <ProductCard key={idx} {...item} />
+          ))}
         </div>
-      </div>
-      <div className="intro-image-container">
-        <img
-          src="../images/SmartDesign/intro.png"
-          alt="과목 소개"
-          className="intro-image"
-        />
-      </div>
+
     </div>
   );
 }

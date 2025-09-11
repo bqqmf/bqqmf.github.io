@@ -111,16 +111,6 @@ header p {
   margin: 50px 145px 50px 72px;
 }
 
-
-.insta-link {
-  text-decoration: none;
-  position: relative;  /* 부모를 기준으로 절대 위치 */
-  left: 78.8%;           /* 화면 왼쪽에서 80% 위치 */
-  font-size: 32px;
-  color: #3657FF;
-}
-
-
 .image-section {
   width: 100%;
   max-width: 1440px;

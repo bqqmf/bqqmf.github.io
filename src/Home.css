@@ -26,6 +26,7 @@ body {
 
 .insta-link {
   display: block;
+  position: relative;  /* 부모를 기준으로 절대 위치 */
   text-decoration: none;
   left: 83.5%;           /* 화면 왼쪽에서 80% 위치 */
   margin-top: 284px;

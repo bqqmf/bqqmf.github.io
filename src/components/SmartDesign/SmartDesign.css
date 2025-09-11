@@ -1,77 +1,99 @@
 .main {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     max-width: 1440px;
+    height: auto;
     border: 5px solid;
     border-color: gray;
     margin: 0 auto;
     /* 가운데 정렬 */
 }
 
-.home-image {
-    width: 50px;
-    height: 50px;
-    margin: 46px auto auto 45px;
-    cursor: pointer;
-    /* border: 5px solid;
-    border-color: green; */
-}
-.class-image-container {
-    position: relative;
-    /* 자식 요소 위치의 기준점 */
-    width: 100%;
-    /* 너비를 유동적으로 설정 */
-    max-width: 1247px;
-    /* 최대 너비는 700px로 제한 */
-    margin: 64px auto 66px auto;
-    /* 페이지 중앙에 배치 */
-    /* border: 5px solid;
-    border-color: red; */
-}
-
-.background-image {
-    width: 100%;
-    height: auto;
-    /* 이미지 비율 유지 */
+.intro-img {
     display: block;
-    /* 이미지 아래 불필요한 여백 제거 */
-    border-radius: 20px;
-    /* 이미지 모서리를 둥글게 */
+    margin: 0 auto;
+    margin-top: 188px;
 }
 
-.button-overlay {
-    position: absolute;
-    /* 부모(.image-container)를 기준으로 위치 설정 */
-    bottom: 0%;
-    /* %를 사용해 반응형 위치 조절 */
-    right: 1%;
-    display: flex;
-    gap: 24px;
-    /* 버튼 사이 간격 */
+/* 카드 css */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 82px;
+  justify-content: center;
+  margin-top: 179px;
+  margin-left: 80px;
+  margin-right: 80px;
+  width: fit-content;
 }
 
-.action-image {
-    width: 378px;
-    height: 102px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
 }
 
-.action-image:hover {
-    transform: translateY(-2px) scale(1.05);
+.product-img {
+  width: 372px;
+  height: 285px;
+  object-fit: cover;
 }
 
-.intro-image-container {
-    position: relative;
-    width: 100%;
-    max-width: 1369px;
-    margin: auto auto 146px auto;
+.product-title {
+  margin-top: 19px;
+  margin-bottom: 0px;
+  font-size: 22px;
+  font-weight: bold;
 }
-.intro-image {
-    /* 자식 요소 위치의 기준점 */
-    width: 100%;
-    /* 너비를 유동적으로 설정 */
-    /* 최대 너비는 700px로 제한 */
-    /* 페이지 중앙에 배치 */
-    /* border: 5px solid;
-    border-color: blue; */
+
+.product-names {
+  display: flex;
+  gap: 7px;
+  margin-top: 10px;
+}
+
+.product-name {
+  margin: 4px 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* 모달 css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);  /* 반투명 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 1200px;
+  width: 80%;
+  max-height: 80vh;
+  overflow-y: auto;
+  text-align: center;
+  position: relative;
+
+  scrollbar-width: none;
+}
+
+.modal-content::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
 }

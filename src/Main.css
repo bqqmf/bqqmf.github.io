@@ -13,12 +13,6 @@ body {
   height: 972px
 }
 
-.main img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .enter-btn {
   width: 162px;
   height: 46px;
