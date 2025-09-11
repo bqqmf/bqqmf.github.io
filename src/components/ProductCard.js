@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 
-export default function ProductCard({ image, title, names }) {
+export default function ProductCard({ image, image_detail, title, names }) {
     const [isOpen, setIsOpen] = useState(false);
 
     // 모달 열릴 때 body 스크롤 막기
@@ -33,7 +33,7 @@ export default function ProductCard({ image, title, names }) {
             {isOpen && (
                 <div className="modal-overlay" onClick={() => setIsOpen(false)}>
                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                        <img src={image} alt={title} className="modal-img" />
+                        <img src={image_detail} alt={title} className="modal-img" />
                         <h2>{title}</h2>
                         <p>{names.join(", ")}</p>
                     </div>

@@ -1,7 +1,7 @@
-import React from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Main from "./Main";
 import Home from "./Home";
+import ScrollToTop from "./ScrollToTop";
 import SmartDesign from "./components/SmartDesign/SmartDesign";
 import SmartDesignA1 from "./components/SmartDesign/A1";
 import SmartDesignA2 from "./components/SmartDesign/A2";
@@ -16,6 +16,7 @@ import "./style.css";
 export default function App() {
   return (
     <HashRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Main />}></Route>
         <Route path="/home" element={<Home />}></Route>
