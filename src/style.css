@@ -2,8 +2,6 @@
 body {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   margin: 0;
-  background: #fafafa;
-  color: #222;
 }
 
 .line {
@@ -47,8 +45,6 @@ main {
 header {
   width: 1364px;
   margin: 0 auto;
-  border: 5px solid;
-  border-color: red;
   margin-top: 43px;
 }
 
@@ -79,8 +75,6 @@ header p {
 }
 
 .intro {
-  border: 5px solid;
-  border-color: green;
   margin: 52px 40px 53px 40px;
 }
 
@@ -107,7 +101,6 @@ header p {
 } */
 
 .schedule-image {
-  border-color: blue;
   margin: 50px 145px 50px 72px;
 }
 
@@ -118,6 +111,4 @@ header p {
   margin: 0 auto;
   margin-top: 3rem;
   /* 가운데 정렬 */
-  border: 5px solid;
-  border-color: skyblue;
 }

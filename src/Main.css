@@ -3,8 +3,6 @@
 body {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   margin: 0;
-  background: #fafafa;
-  color: #222;
 }
 
 .main {
@@ -35,4 +33,28 @@ body {
 
 .enter-btn:hover {
   background-color: #002ECC; /* 호버 시 약간 어두운 파란색 */
+}
+
+.main-text {
+  position: absolute;
+  bottom: 410px;
+  transform: translatex(-50%);
+  left: 50%;
+  font-size: 60px;
+  font-weight: 500;
+  color: #a4a4a4;
+  text-align: center;
+  line-height: 1.05;
+}
+
+.bottom-text {
+  position: absolute;
+  bottom: 46px;
+  transform: translatex(-50%);
+  left: 50%;
+  font-size: 16px;
+  font-weight: 500;
+  color: #a4a4a4;
+  text-align: center;
+  /* line-height: 1.05; */
 }
