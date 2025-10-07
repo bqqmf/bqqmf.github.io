@@ -29,16 +29,15 @@ body {
 .home_row {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  width: 1440px;
   background-color: white;
   z-index: 1000;
   display: flex;
   align-items: center;
   gap: 207px;
-  margin-left: 80px;
   height: 120px;
-  /* margin-top: 55px; */
+  transform: translateX(-50%);
 }
 
 .home_photo {

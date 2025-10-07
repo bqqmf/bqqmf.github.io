@@ -50,6 +50,16 @@ export default function ProductCard({ summary, image, image_detail, title, names
 
                         }
 
+                        {/* 실제 이미지 */}
+                        {/* 요약 */}
+                        {summary && (
+                            <img
+                                src={summary}
+                                alt={`${title} summary`}
+                                className="product-summary"
+                            />
+                        )}
+
                         {video && (
                             <div>
                                 <video 
@@ -62,18 +72,6 @@ export default function ProductCard({ summary, image, image_detail, title, names
                                 />
                             </div>
                         )}
-
-
-                        {/* 실제 이미지 */}
-                        {/* 요약 */}
-                        {summary && (
-                            <img
-                                src={summary}
-                                alt={`${title} summary`}
-                                className="product-summary"
-                            />
-                        )}
-
 
                         <img
                             src={image_detail}
