@@ -19,13 +19,15 @@ export default function SmartDesign() {
       names: ["이름1", "이름2", "이름3", "이름4"],
     },
     {
+      summary: "images/SmartDesign/product-summary_3.png",
       image: "images/SmartDesign/product-card_3.png",
       image_detail: "images/SmartDesign/product_detail_3.png",
       title: "Ziggleit (1920 판넬)",
       names: ["최새롬", "이혜진", "소민지", "황지해"],
     },
     {
-      image: "images/SmartDesign/product-card_4.jpg",
+      summary: "images/SmartDesign/product-summary_4.png",
+      image: "images/SmartDesign/product-card_4.png",
       // 큰 사이즈 파일
       image_detail: "images/SmartDesign/product_detail_3_large.png",
       title: "스디 웹디용 판넬(24MB)",
@@ -188,7 +190,7 @@ export default function SmartDesign() {
 
   return (
     <div className="main">
-        <img className="intro-img" src="images/SmartDesign/intro.png" style={{ width: "832px", height: "auto" }} />
+        <img className="intro-img" src="images/SmartDesign/intro.png"/>
         <div className="products-grid">
           {data.map((item, idx) => (
             <ProductCard key={idx} {...item} />

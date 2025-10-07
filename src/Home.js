@@ -9,9 +9,7 @@ export default function Home() {
 
       {/* Main */}
       <main>
-        <img src="images/home_1.png" style={{ width: "1440px", height: "auto" }} />
-        <Subjects />
-        <img src="images/home_2.png" style={{ width: "1440px", height: "auto" }} />
+        <img src="images/home_1.png" className="home_1"/>
 
         <a
           className="semi-bold insta-link"
@@ -19,11 +17,13 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          @insta
+          Insta
         </a>
 
-      </main>
+        <Subjects />
 
+        <img src="images/home_2.png" className="home_2"/>
+      </main>
     </div>
   );
 }

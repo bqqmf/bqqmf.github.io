@@ -9,7 +9,8 @@
 .intro-img {
     display: block;
     margin: 0 auto;
-    margin-top: 188px;
+    width: 1275px;
+    margin-top: 140px;
 }
 
 /* 카드 css */
@@ -19,7 +20,7 @@
   grid-template-rows: repeat(3, auto);
   gap: 82px;
   justify-content: center;
-  margin-top: 179px;
+  margin-top: 72px;
   margin-left: 80px;
   margin-right: 80px;
   width: fit-content;
@@ -101,4 +102,10 @@
   width: auto;
   height: auto;
   border-radius: 8px;
+  margin-top: 40px;
+}
+
+.product-summary {
+  max-width: 92%;
+  margin-top: 66px;
 }

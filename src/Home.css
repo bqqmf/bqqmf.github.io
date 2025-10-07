@@ -1,3 +1,6 @@
+main {
+  position: relative;
+}
 
 /* 필요한 다른 굵기도 같은 방식으로 추가할 수 있습니다. */
 body {
@@ -22,12 +25,22 @@ body {
   font-weight: 300;
 }
 
+.home_1 {
+  width: 1440px;
+  height: auto;
+  margin-top: 55px;
+}
+
+.home_2 {
+  width: 1440px;
+  height: auto;
+}
+
 .insta-link {
-  display: block;
-  position: relative;  /* 부모를 기준으로 절대 위치 */
+  position: absolute;
   text-decoration: none;
-  left: 83.5%;           /* 화면 왼쪽에서 80% 위치 */
-  margin-top: 284px;
+  top: 55px;
+  right: 99px;
   font-size: 38px;
   color: #a4a4a4;
 }
