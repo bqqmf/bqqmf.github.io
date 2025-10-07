@@ -24,6 +24,7 @@ export default function SmartDesign() {
       image_detail: "images/SmartDesign/product_detail_3.png",
       title: "Ziggleit (1920 판넬)",
       names: ["최새롬", "이혜진", "소민지", "황지해"],
+      video: "videos/product-video_3.mp4"
     },
     {
       summary: "images/SmartDesign/product-summary_4.png",

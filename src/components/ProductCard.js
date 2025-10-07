@@ -2,7 +2,7 @@ import Skeleton from "react-loading-skeleton";
 import 'react-loading-skeleton/dist/skeleton.css'
 import { useEffect, useState } from "react";
 
-export default function ProductCard({ summary, image, image_detail, title, names }) {
+export default function ProductCard({ summary, image, image_detail, title, names, video }) {
     const [isOpen, setIsOpen] = useState(false);
     const [loaded, setLoaded] = useState(false);
 
@@ -49,6 +49,20 @@ export default function ProductCard({ summary, image, image_detail, title, names
                             />
 
                         }
+
+                        {video && (
+                            <div>
+                                <video 
+                                    src={video} 
+                                    className="product-video" 
+                                    loop
+                                    playsInline
+                                    autoPlay
+                                    controls
+                                />
+                            </div>
+                        )}
+
 
                         {/* 실제 이미지 */}
                         {/* 요약 */}

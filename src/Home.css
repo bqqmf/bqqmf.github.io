@@ -6,6 +6,7 @@ main {
 body {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   margin: 0;
+  text-align: center;
 }
 
 .bold {
@@ -25,6 +26,33 @@ body {
   font-weight: 300;
 }
 
+.home_row {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 207px;
+  margin-left: 80px;
+  height: 120px;
+  /* margin-top: 55px; */
+}
+
+.home_photo {
+  width: 981px;
+  height: auto;
+}
+
+.home_0 {
+  width: 1190px;
+  height: 842px;
+  margin-top: 127px;
+  margin-bottom: 121px;
+}
+
 .home_1 {
   width: 1440px;
   height: auto;
@@ -37,7 +65,6 @@ body {
 }
 
 .insta-link {
-  position: absolute;
   text-decoration: none;
   top: 55px;
   right: 99px;

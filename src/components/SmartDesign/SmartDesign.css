@@ -109,3 +109,8 @@
   max-width: 92%;
   margin-top: 66px;
 }
+
+.product-video {
+  width: 800px;
+  height: 450px;
+}

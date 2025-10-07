@@ -1,6 +1,6 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
-import Main from "./Main";
-import Home from "./Home";
+import MainWrapper from "./MainWrapper";
+import HomeWrapper from "./HomeWrapper";
 import ScrollToTop from "./ScrollToTop";
 import SmartDesign from "./components/SmartDesign/SmartDesign";
 import CapstoneDesign from "./components/CapstoneDesign/CapstoneDesign";
@@ -12,8 +12,10 @@ export default function App() {
     <HashRouter>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Main />}></Route>
-        <Route path="/home" element={<Home />}></Route>
+        {/* <Route path="/" element={<Main />}></Route> */}
+        <Route path="/" element={<MainWrapper />}></Route>
+
+        <Route path="/home" element={<HomeWrapper />}></Route>
 
         <Route path="/smart-design" element={<SmartDesign />}></Route>
 
