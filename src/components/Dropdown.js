@@ -59,7 +59,7 @@ const Dropdown = () => {
         >
 
           <li onClick={handleLinkClick}>
-            <Link to="/" style={listItemStyle}>
+            <Link to="/smart-design" style={listItemStyle}>
               Smart Design
             </Link>
           </li>

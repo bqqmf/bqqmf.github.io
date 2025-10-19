@@ -58,6 +58,8 @@ html, body, #root {
   font-weight: 500;
   color: #a4a4a4;
   text-align: center;
+
+  white-space: nowrap;
 }
 
 a {

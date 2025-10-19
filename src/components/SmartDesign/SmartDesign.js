@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate, Link } from "react-router-dom";
 import "./SmartDesign.css"; // CSS 분리 가능
 import ProductCard from "../ProductCard";
