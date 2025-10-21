@@ -36,7 +36,7 @@ export default function SmartDesignMobile() {
 
       <div className="mobile-products-grid">
         {data.map((item, idx) => (
-          <ProductCardMobile key={idx} {...item} />
+          <ProductCardMobile key={idx} index={idx} {...item} />
         ))}
       </div>
     </div>
